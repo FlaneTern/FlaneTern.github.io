@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://https://github.com/FlaneTern/FlaneTern.github.io/blob/main/assets/favicon.png">
+    <title>Santana Yuda Pradata</title>
+    <style>
+        :root {
+            --background-dark: #1e1e1e;
+            --text-dark: #ddd;
+            --link-dark: #87cefa;
+            --link-dark-hover: #b0e0e6;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .sidebar {
+            background: #333;
+            color: #fff;
+            width: 25%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .sidebar a {
+            color: var(--link-dark);
+            text-decoration: none;
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar a:hover {
+            color: var(--link-dark-hover);
+            text-decoration: underline;
+        }
+        .sidebar a img {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            margin-bottom: 2px;
+        }
+        .sidebar .toc {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        .sidebar .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar .toc ul li {
+            margin: 0.5rem 0;
+        }
+        .sidebar .toc ul li a {
+            color: var(--link-dark);
+            text-decoration: none;
+        }
+        .sidebar .toc ul li a:hover {
+            color: var(--link-dark-hover);
+            text-decoration: underline;
+        }
+        .content {
+            width: 75%;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        h2 {
+            color: #fff;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            font-size: 0.8rem;
+        }
+        .rhs_listing {
+            margin-left: 20pt;
+        }
+        .rhs_listing a {
+            color: var(--link-dark);
+            text-decoration: none;
+        }
+        .rhs_listing a:hover {
+            color: var(--link-dark-hover);
+            text-decoration: underline;
+        }    
+        ul {
+        list-style-type: disc;
+        }
+
+        li {
+        margin-bottom: 10px;
+        }
+
+        li a {
+        color: var(--link-dark);
+        text-decoration: none;
+        }
+
+        li a:hover {
+        color: red;
+        text-decoration: underline;
+        }
+
+        li a:visited {
+        color: purple;
+        }
+        </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="assets/photo.jpg" alt="Profile Photo">
+        <h3>Santana Yuda Pradata</h3>
+        <p>A computer scientist enjoying quantum computing.</p>
+
+        <!-- <div class="toc">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> -->
+
+        <br>
+        <br>
+        <br>
+        <a href="mailto:santanayudapradata@mail.ugm.ac.id" target="_blank">
+            <img src="assets/email-icon.png" alt="GitHub">santanayudapradata@mail.ugm.ac.id
+        </a>
+        <a href="https://github.com/FlaneTern" target="_blank">
+            <img src="assets/github-icon.png" alt="GitHub">FlaneTern
+        </a>
+        <a href="https://orcid.org/0009-0009-0470-8456" target="_blank">
+            <img src="assets/orcid-icon.png" alt="ORCID">0009-0009-0470-8456
+        </a>
+    </div>
+
+    <div class="content">
+        <section id="what_i_do">
+            <h2>About Me</h2>
+            <div class="rhs_listing">
+                <p>
+                    Probability theory, numerical optimization, machine Learning, game theory&mdash;you name it.
+                    I've always enjoyed exploring these areas in computer science. That is, until I found myself entangled <i>(pun intended)</i> in the quantum computing rabbit hole.
+                </p>
+                <p>
+                    Do quantum speedups truly exist? If they do, what kinds of problems can quantum computers solve?
+                    Can we always find a classical algorithm that's only polynomially slower than its quantum counterpart?
+                    It would be fun if I could contribute to answering any of these questions.
+                </p>
+                <p>
+                    You can check out my CV here:
+                    <a href="https://drive.google.com/file/d/1JbCP24QpkJ7bsW9H63VZWOF6USWNYjlj/view?usp=drive_link" target="_blank">
+                        [CV Link]
+                    </a>
+                </p>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="rhs_listing">
+                <h3>Gadjah Mada University</h3>
+                <p>Bachelor of Computer Science (B.Cs.)</p>
+                <p>GPA: 3.97/4.00</p>
+                <p>August 2022 - December 2025 (expected)</p>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><b>Investigating the Impact of Optimal Data Transfer Intervals on 
+                    Failure-Prone Wireless Sensor Networks</b> &mdash; 
+                    Muhammad Alfian Amrizal, <b><u>Santana Yuda Pradata</u></b>, 
+                    Muthukathan Rajendran Sudha, Li Wang, and Reza Pulungan <br> 
+                    Published: IEEE Sensors Letters <a href="https://doi.org/10.1109/LSENS.2024.3414294" target="_blank">
+                        2024.3414294</a></li>
+                <li><b>Efficient Classical Computation of Single-Qubit Marginal Measurement 
+                    Probabilities to Simulate Certain Classes of Quantum Algorithms</b> &mdash; 
+                    <b><u>Santana Yuda Pradata</u></b>, M. 'Anin Nabail 'Azhiim, Hendry Minfui Lim,
+                    and Ahmad Ridwan Tresna Nugraha <br> 
+                    Submitted to Physical Review A. Preprint: <a href="https://doi.org/10.48550/arXiv.2411.06822" target="_blank">
+                        arXiv:2411.06822</a> </li>
+                <li><b>Optimization of Quantization-Aware Training on U-Net-Based
+                    Road Damage Detection Models</b> &mdash; 
+                    <b><u>Santana Yuda Pradata</u></b>, Yazid Rizki Kurniawan, 
+                    Aryadeeva Ma'ruf Baihaqi, Muhammad Ihsan, and Muhammad Alfian Amrizal <br>
+                    Accepted at International Conference on Science and Technology. Abstract: <a href="https://drive.google.com/file/d/1NBb5X1NVm2YgGZUIZjHpMltquwFgKYC1/view?usp=drive_link" target="_blank">
+                        [PDF Link]</a> </li>
+                <li><b>FaultNet-Sim: A C++ Simulator for Failure-Prone
+                    Wireless Sensor Networks</b> &mdash;
+                    <b><u>Santana Yuda Pradata</u></b>, Muhammad Alfian Amrizal,
+                    Ahmad Ridwan Tresna Nugraha, and Reza Pulungan <br>
+                    Submitted to SoftwareX. Abstract: <a href="https://drive.google.com/file/d/1BAwnrdu8pT90wANs0G2IUxDM8oegR_YN/view?usp=drive_link" target="_blank">
+                        [PDF Link]</a> </li>
+                <li><b>MedRoPax: A Comprehensive Software for Solving Heterogeneous Vehicle
+                    Routing Problem with 3D Loading Constraints and Cardboard Box Packing for
+                    Medical Supply Distribution</b> &mdash;
+                    Rudy Prietno, <b><u>Santana Yuda Pradata</u></b>, Raka Satya Prasasta,
+                    Kadek Gemilang Santiyuda, Muhammad Alfian Amrizal, Tri Kuntoro Priyambodo,
+                    and Vincent Fengtian Yu <br>
+                    Submitted to Software Impacts. Abstract: <a href="https://drive.google.com/file/d/1QYDBLwDUhOBYUDiXOKqEsWdX9432_Alz/view?usp=drive_link" target="_blank">
+                        [PDF Link]</a> </li>
+                <li><b>Improving the Efficiency of a Deep Reinforcement Learning-Based
+                    Power Management System for HPC Clusters Using Curriculum Learning</b> &mdash;
+                    Thomas Budiarjo, <b><u>Santana Yuda Pradata</u></b>, Kadek Gemilang Santiyuda,
+                    Muhammad Alfian Amrizal, Reza Pulungan, and Hiroyuki Takizawa <br>
+                    Submitted to Supercomputing Asia 2025. Abstract: <a href="https://drive.google.com/file/d/1ZcYlTUiAFTdAF2Cu_EAkY9r_sPr-2Oiw/view?usp=drive_link" target="_blank">
+                        [PDF Link]</a> </li>
+        </section>
+
+        <section id="research_experiences">
+            <h2>Research Experiences</h2>
+            <div class="rhs_listing">
+                <h3>Research Assistant - Indonesia National Research and Innovation Agency</h3>
+                <p>Research Assistant at the Research Center for Quantum Physics.
+                Working under the supervision of <a href="https://art.nugraha.web.id" target="_blank"><u>Dr. A. R. T. Nugraha</u></a> on efficient classical simulation of quantum computation</p>
+            </div>
+            <div class="rhs_listing">
+                <h3>Garuda ACE: University of Chicago - Indonesia Research Training Program</h3>
+                <p>A rigorous research training program for the top 50 undergraduate computer science students from Indonesia, led by <a href="http://people.cs.uchicago.edu/~haryadi/" target="_blank"><u>Prof. Haryadi Gunawi</u></a> of the University of Chicago.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Other Projects</h2>
+            Check out my <a href="https://github.com/FlaneTern" target="_blank">
+                GitHub
+            </a> for the projects listed below. Note that some projects are not public.
+            <ul>
+                <li>
+                    <strong>Epistemically-Restricted Monte Carlo (ERMC):</strong> 
+                    A Quantum Monte Carlo method in the epistemically-restricted phase space formulation of quantum mechanics, achieving up to 2500 times speedup over Variational Monte Carlo (VMC) by bypassing resampling steps. | <em>Python</em>
+                </li>
+                <li>
+                    <strong>FT-TDMA (Fault-Tolerant Time-Division Multiple Access):</strong> 
+                    A simulator for fault-tolerant tree &amp; TDMA-based Wireless Sensor Networks | 4000 Lines of Code (LOC) | <em>C++</em>
+                </li>
+                <li>
+                    <strong>PeopleCounter:</strong> 
+                    My own Radial Basis Function kernel Support Vector Machine for image crowd counting | 3000 LOC | <em>C++, OpenCV</em>
+                </li>
+                <li>
+                    <strong>MediTransit:</strong> 
+                    An integrated solver for the Heterogeneous Vehicle Routing Problem with 3D Loading Constraints | <em>Python, JavaScript, MySQL</em>
+                </li>
+                <li>
+                    <strong>GOQAR:</strong> 
+                    My own hyperparameter tuning algorithm for searching the best combination of Quantization-Aware Layers in Deep Convolutional Neural Networks | <em>Python, TensorFlow</em>
+                </li>
+            </ul>
+        </section>
+
+        <section id="talks">
+            <h2>Talks</h2>
+            <div class="rhs_listing">
+                <h3>International Conference on Science and Technology</h3>
+                <p>Presented our research on deep learning quantization on the International Conference on Science and Technology (ICST), Computer, Electronics, and Information Technology symposium '23.</p>
+            </div>
+        </section>
+
+        <section id="techical_sckills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++, C#, Python, Java</li>
+                <li>Database: MySQL, SQLite</li>
+                <li>Developer Tools: Git, Visual Studio, VS Code, Unity Engine, Premake, CMake, etc</li>
+                <li>Libraries: QuTiP, Qiskit, PennyLane, TensorFlow, TensorRT, NumPy, OpenGL, OpenCV, etc.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Santana Yuda Pradata</p>
+        </footer>
+    </div>
+</body>
+</html>
